@@ -1,0 +1,121 @@
+/*
+ * Gourmet Haven Restaurant Website
+ * Dark Mode Stylesheet
+ */
+
+/* Dark Mode Variables */
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+    --light-bg: #1e1e1e;
+    --dark-bg: #000000;
+    --border-color: #333333;
+}
+
+/* Dark Mode Styles */
+.dark-mode body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dark-mode #mainNav.scrolled {
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .navbar-brand {
+    color: var(--primary-color);
+}
+
+.dark-mode .nav-link {
+    color: var(--text-color);
+}
+
+.dark-mode #darkModeToggle {
+    color: var(--text-color);
+}
+
+.dark-mode .bg-light {
+    background-color: var(--light-bg) !important;
+}
+
+.dark-mode .card {
+    background-color: var(--light-bg);
+    border-color: var(--border-color);
+}
+
+.dark-mode .card-body {
+    color: var(--text-color);
+}
+
+.dark-mode .nav-tabs {
+    border-bottom-color: var(--border-color);
+}
+
+.dark-mode .nav-tabs .nav-link:not(.active) {
+    color: var(--text-color);
+}
+
+.dark-mode .form-control {
+    background-color: var(--light-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.dark-mode .testimonial-card {
+    background-color: var(--light-bg);
+}
+
+/* Dark Mode Gallery Styles */
+.dark-mode .gallery-item {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .gallery-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .gallery-item .gallery-caption {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode .lb-outerContainer {
+    background-color: var(--light-bg);
+}
+
+.dark-mode .lb-dataContainer {
+    background-color: var(--light-bg);
+}
+
+.dark-mode .lb-data .lb-details {
+    color: var(--text-color);
+}
+
+.dark-mode .lb-data .lb-number {
+    color: var(--text-color);
+}
+
+.dark-mode .lb-data .lb-close {
+    filter: invert(1);
+}
+
+.dark-mode footer {
+    background-color: var(--dark-bg);
+}
+
+/* Dark Mode Toggle Icon */
+.dark-mode #darkModeToggle .fa-moon {
+    display: none;
+}
+
+.dark-mode #darkModeToggle .fa-sun {
+    display: inline-block;
+}
+
+#darkModeToggle .fa-sun {
+    display: none;
+}
+
+#darkModeToggle .fa-moon {
+    display: inline-block;
+}

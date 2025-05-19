@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience authentic flavors at our restaurant. Book a table today!">
+    <title>Gourmet Haven | Fine Dining Experience</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lightbox2 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/hero-enhancement.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Gourmet Haven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reservation">Reservations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="btn btn-sm">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Taste the Authentic Flavors</h1>
+            <p>Experience culinary excellence in every bite</p>
+            <a href="#reservation" class="btn btn-primary btn-lg">Reserve a Table</a>
+        </div>
+        <div class="hero-border"></div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-heading">Our Story</h2>
+                    <hr class="divider">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <img src="img/Our Chef.jpeg" alt="Our Chef" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3>Passion for Culinary Excellence</h3>
+                    <p>Founded in 2010, Gourmet Haven has been serving exquisite dishes crafted with passion and precision. Our team of expert chefs, led by award-winning Chef Michael Roberts, is dedicated to creating unforgettable dining experiences.</p>
+                    <p>We source only the freshest ingredients from local farmers and suppliers, ensuring that every dish not only tastes exceptional but also supports our community.</p>
+                    <p>Our mission is simple: to delight your palate with authentic flavors while providing a warm, inviting atmosphere where memories are made.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-heading">Our Menu</h2>
+                    <hr class="divider">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <ul class="nav nav-tabs justify-content-center" id="menuTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="appetizers-tab" data-bs-toggle="tab" data-bs-target="#appetizers" type="button" role="tab" aria-controls="appetizers" aria-selected="true">Appetizers</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="main-courses-tab" data-bs-toggle="tab" data-bs-target="#main-courses" type="button" role="tab" aria-controls="main-courses" aria-selected="false">Main Courses</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="desserts-tab" data-bs-toggle="tab" data-bs-target="#desserts" type="button" role="tab" aria-controls="desserts" aria-selected="false">Desserts</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="drinks-tab" data-bs-toggle="tab" data-bs-target="#drinks" type="button" role="tab" aria-controls="drinks" aria-selected="false">Drinks</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content" id="menuTabContent">
+                <!-- Menu content will be loaded dynamically -->
+                <div class="tab-pane fade show active" id="appetizers" role="tabpanel" aria-labelledby="appetizers-tab">
+                    <div class="row" id="appetizers-content"></div>
+                </div>
+                <div class="tab-pane fade" id="main-courses" role="tabpanel" aria-labelledby="main-courses-tab">
+                    <div class="row" id="main-courses-content"></div>
+                </div>
+                <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                    <div class="row" id="desserts-content"></div>
+                </div>
+                <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+                    <div class="row" id="drinks-content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-heading">Gallery</h2>
+                    <hr class="divider">
+                    <p class="lead mb-4">Explore our restaurant's ambiance, signature dishes, and culinary artistry</p>
+                </div>
+            </div>
+            <div class="row" data-aos="flip-up">
+                <!-- Gallery images -->
+                <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-aos="zoom-in">
+                    <a href="img/Gallery/RestaurantInterior.jpeg" data-lightbox="gallery" data-title="Our Elegant Dining Space">
+                        <img src="img/Gallery/RestaurantInterior.jpeg" alt="Restaurant Interior" class="img-fluid">
+                        <div class="gallery-caption">
+                            <h5>Our Elegant Dining Space</h5>
+                            <p>Experience the warm and inviting atmosphere of our main dining area.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <a href="img/Gallery/signature-dish.jpeg" data-lightbox="gallery" data-title="Chef's Special">
+                        <img src="img/Gallery/signature-dish.jpeg" alt="Signature Dish" class="img-fluid">
+                        <div class="gallery-caption">
+                            <h5>Chef's Special</h5>
+                            <p>Our award-winning signature dish prepared with locally-sourced ingredients.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="img/Gallery/chef-preparing-food.jpeg" data-lightbox="gallery" data-title="Culinary Artistry">
+                        <img src="img/Gallery/chef-preparing-food.jpeg" alt="Chef Preparing Food" class="img-fluid">
+                        <div class="gallery-caption">
+                            <h5>Culinary Artistry</h5>
+                            <p>Our head chef meticulously preparing each dish with precision and passion.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <a href="img/Gallery/elegant-table-setting.jpeg" data-lightbox="gallery" data-title="Fine Dining Experience">
+                        <img src="img/Gallery/elegant-table-setting.jpeg" alt="Elegant Table Setting" class="img-fluid">
+                        <div class="gallery-caption">
+                            <h5>Fine Dining Experience</h5>
+                            <p>Every table is set with attention to detail for a perfect dining experience.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <a href="img/Gallery/dessert-platter.jpeg" data-lightbox="gallery" data-title="Sweet Indulgence">
+                        <img src="img/Gallery/dessert-platter.jpeg" alt="Dessert Platter" class="img-fluid">
+                        <div class="gallery-caption">
+                            <h5>Sweet Indulgence</h5>
+                            <p>Our dessert selection features handcrafted treats to satisfy any sweet tooth.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <a href="img/Gallery/Bar Area.jpeg" data-lightbox="gallery" data-title="Craft Cocktails & Fine Wines">
+                        <img src="img/Gallery/Bar Area.jpeg" alt="Bar Area" class="img-fluid">
+                        <div class="gallery-caption">
+                            <h5>Craft Cocktails & Fine Wines</h5>
+                            <p>Our well-stocked bar offers premium spirits, craft cocktails, and an extensive wine list.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-heading">Make a Reservation</h2>
+                    <hr class="divider">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <form id="reservationForm" class="needs-validation" novalidate>
+                        <!-- Form fields will be added here -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-heading">What Our Customers Say</h2>
+                    <hr class="divider">
+                    <p class="lead mb-4">Hear from our satisfied customers about their dining experiences</p>
+                </div>
+            </div>
+            <div class="row" id="testimonials-container">
+                <!-- Static Testimonials -->
+                <div class="col-md-4" data-aos="slide-left">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>The food was absolutely amazing! Every dish was prepared to perfection, and the service was impeccable. Will definitely be coming back!</p>
+                        <div class="customer-info">
+                            <img src="img/testimonials/Sarah.jpeg" alt="Sarah" class="customer-img">
+                            <p class="customer-name">Sarah</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="slide-left" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>What a fantastic dining experience! The atmosphere was elegant yet comfortable, and the chef's special was out of this world. Highly recommend!</p>
+                        <div class="customer-info">
+                            <img src="img/testimonials/My_photo.jpg" alt="Mohamed" class="customer-img">
+                            <p class="customer-name">Mohamed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="slide-left" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>I celebrated my anniversary here and it couldn't have been more perfect. The staff went above and beyond to make our night special. The wine pairing suggestions were excellent!</p>
+                        <div class="customer-info">
+                            <img src="img/testimonials/Ahmed.jpeg" alt="Ahmed" class="customer-img">
+                            <p class="customer-name">Ahmed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <footer id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up">
+                    <h4>Contact Us</h4>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Gourmet Street, Foodville</p>
+                        <p><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@gourmethaven.com</p>
+                    </address>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Opening Hours</h4>
+                    <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                    <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2023 Gourmet Haven. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!-- Data Files -->
+    <script src="js/gallery-data.js"></script>
+    <script src="js/testimonials-data.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/hero-effects.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Sarah ",
+    "text": "The food was absolutely amazing! Every dish was prepared to perfection, and the service was impeccable. Will definitely be coming back!",
+    "image": "img/testimonials/Sarah.jpg"
+  },
+  {
+    "name": "Mohamed",
+    "text": "What a fantastic dining experience! The atmosphere was elegant yet comfortable, and the chef's special was out of this world. Highly recommend!",
+    "image": "img/testimonials/My_photo.jpg"
+  },
+  {
+    "name": "Ahmed",
+    "text": "I celebrated my anniversary here and it couldn't have been more perfect. The staff went above and beyond to make our night special. The wine pairing suggestions were excellent!",
+    "image": "img/testimonials/Ahmed.jpg"
+  }
+
+]

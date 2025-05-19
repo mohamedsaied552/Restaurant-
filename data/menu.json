@@ -1,0 +1,106 @@
+{
+  "appetizers": [
+    {
+      "name": "Bruschetta",
+      "description": "Toasted bread topped with fresh tomatoes, basil, and garlic",
+      "price": "$8.99",
+      "image": "img/menu/bruschetta.jpeg"
+    },
+    {
+      "name": "Calamari",
+      "description": "Crispy fried calamari served with lemon aioli",
+      "price": "$12.99",
+      "image": "img/menu/Calamari.jpeg"
+    },
+    {
+      "name": "Stuffed Mushrooms",
+      "description": "Mushroom caps filled with herb cream cheese and topped with breadcrumbs",
+      "price": "$10.99",
+      "image": "img/menu/Stuffed%20Mushrooms.jpeg"
+    },
+    {
+      "name": "Shrimp Cocktail",
+      "description": "Chilled jumbo shrimp served with cocktail sauce",
+      "price": "$14.99",
+      "image": "img/menu/Shrimp%20Cocktail.jpeg"
+    }
+  ],
+  "main-courses": [
+    {
+      "name": "Filet Mignon",
+      "description": "8oz filet served with garlic mashed potatoes and seasonal vegetables",
+      "price": "$32.99",
+      "image": "img/menu/Filet%20Mignon.jpeg"
+    },
+    {
+      "name": "Grilled Salmon",
+      "description": "Fresh Atlantic salmon with lemon butter sauce and wild rice",
+      "price": "$26.99",
+      "image": "img/menu/Grilled%20Salmon.jpeg"
+    },
+    {
+      "name": "Chicken Parmesan",
+      "description": "Breaded chicken breast topped with marinara and mozzarella, served with pasta",
+      "price": "$22.99",
+      "image": "img/menu/Chicken%20Parmesan.jpeg"
+    },
+    {
+      "name": "Vegetable Risotto",
+      "description": "Creamy Arborio rice with seasonal vegetables and Parmesan cheese",
+      "price": "$18.99",
+      "image": "img/menu/Vegetable%20Risotto.jpeg"
+    }
+  ],
+  "desserts": [
+    {
+      "name": "Tiramisu",
+      "description": "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream",
+      "price": "$8.99",
+      "image": "img/menu/Tiramisu.jpeg"
+    },
+    {
+      "name": "Chocolate Lava Cake",
+      "description": "Warm chocolate cake with a molten center, served with vanilla ice cream",
+      "price": "$9.99",
+      "image": "img/menu/Chocolate%20Lava%20Cake.jpeg"
+    },
+    {
+      "name": "Crème Brûlée",
+      "description": "Rich custard topped with a layer of caramelized sugar",
+      "price": "$8.99",
+      "image": "img/menu/Cr%C3%A8me%20Br%C3%BBl%C3%A9e.jpeg"
+    },
+    {
+      "name": "New York Cheesecake",
+      "description": "Creamy cheesecake with a graham cracker crust, topped with berry compote",
+      "price": "$9.99",
+      "image": "img/menu/New%20York%20Cheesecake.jpeg"
+    }
+  ],
+  "drinks": [
+    {
+      "name": "Signature Martini",
+      "description": "Our house specialty with premium vodka and a secret blend of flavors",
+      "price": "$12.99",
+      "image": "img/menu/Signature%20Martini.jpeg"
+    },
+    {
+      "name": "Redbull",
+      "description": "Energy drink to keep you going all night",
+      "price": "$5.99",
+      "image": "img/menu/Redbull.jpeg"
+    },
+    {
+      "name": "Red Wine Flight",
+      "description": "Sample three of our premium red wines",
+      "price": "$15.99",
+      "image": "img/menu/Red%20Wine%20Flight.jpeg"
+    },
+    {
+      "name": "Italian Soda",
+      "description": "Sparkling water with your choice of flavored syrup",
+      "price": "$4.99",
+      "image": "img/menu/Italian%20Soda.jpeg"
+    }
+  ]
+}

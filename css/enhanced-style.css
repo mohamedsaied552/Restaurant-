@@ -1,0 +1,262 @@
+/*
+ * Gourmet Haven Restaurant Website
+ * Enhanced Stylesheet for Upscale Design
+ */
+
+:root {
+    /* Refined Color Palette */
+    --primary-color: #b8860b;         /* Darker gold for sophistication */
+    --primary-light: #d4af37;         /* Original gold as secondary accent */
+    --secondary-color: #2c3e50;       /* Rich dark blue for contrast */
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --text-light: #666666;            /* Lighter text for subtlety */
+    --light-bg: #f9f7f3;              /* Warm off-white for background */
+    --dark-bg: #1a1a1a;               /* Deeper black for contrast */
+    --border-color: #e0e0e0;
+    --success-color: #2e7d32;         /* Darker green */
+    --error-color: #c62828;           /* Deeper red */
+    --accent-color: #8d6e63;          /* Warm brown accent */
+    
+    /* Enhanced Typography */
+    --heading-font: 'Cormorant Garamond', serif;  /* Elegant serif for headings */
+    --subheading-font: 'Lora', serif;             /* Secondary serif for accents */
+    --body-font: 'Montserrat', sans-serif;        /* Clean sans-serif for body */
+    
+    /* Refined Spacing */
+    --section-padding: 6rem 0;
+    --element-spacing: 1.5rem;
+}
+
+/* General Style Enhancements */
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.8;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    transition: all 0.4s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+.section-heading {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+    font-weight: 700;
+}
+
+.lead {
+    font-family: var(--subheading-font);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+.divider {
+    width: 60px;
+    border-top: 2px solid var(--primary-color);
+    margin: 0 auto 2.5rem;
+    opacity: 0.8;
+}
+
+/* Enhanced Navbar */
+#mainNav {
+    padding: 1.2rem 0;
+    transition: all 0.4s ease;
+}
+
+#mainNav.scrolled {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 0.8rem 0;
+}
+
+.navbar-brand {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: var(--primary-light);
+}
+
+.nav-link {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.5rem 1.2rem !important;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 70%;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Enhanced Hero Section */
+.hero {
+    height: 100vh;
+    min-height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/hero/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.05em;
+}
+
+.hero p {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+    font-family: var(--subheading-font);
+    font-weight: 400;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-radius: 0;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.btn-primary:hover::before {
+    left: 0;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(184, 134, 11, 0.3);
+}
+
+/* Enhanced Testimonials Section */
+.testimonial-card {
+    background-color: var(--light-bg);
+    padding: 2.5rem;
+    border-radius: 0;
+    margin-bottom: 2rem;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    border-left: 3px solid var(--primary-color);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .quote-icon {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    opacity: 0.15;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.testimonial-card p {
+    font-family: var(--subheading-font);
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+    padding-left: 1rem;
+}
+
+.testimonial-card .customer-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1.2rem;
+    border: 3px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .customer-info {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 1.5rem;
+}
+
+.testimonial-card .customer-name {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}
+
+/* Add more enhanced styles as needed */
